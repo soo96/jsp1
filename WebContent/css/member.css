@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300&display=swap');
+*{
+    font-family: 'IBM Plex Sans KR', sans-serif;
+}
+h3{
+    text-align: center;
+    background-color: #d3d8ff;
+    margin: 0px;
+    padding: 0,0,10px,10px;
+    width: 294px;
+}
+div{
+    width: 294px;
+    background-color: white;
+}
+td{
+    /* border: 1px solid; */
+    color: black;
+}
+table{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    background-color: #f1f2f5;
+}
+/* 속성을 이용한 선택자 */
+input[type=submit], input[type=reset]{
+    cursor:pointer;
+    border: none;
+    border-radius: 4px;
+}
+input[type=submit]:hover, input[type=reset]:hover{
+    background-color: #a1a7cc;
+    border-radius: 2px;
+}
+
+
+input[type=text],input[type=password],input[type=email]{
+    width: 70%;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+input[type=number]{
+    width: 40px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+#버튼{
+    text-align: right;
+    background-color: #f1f2f5;
+    border-top: 1px solid black;
+    border-radius: 0px;
+}
+
+td:nth-child(odd){
+    width: 80px;
+    background-color: #a1a7cc;
+    border-radius: 5px;
+    text-align: center;
+}
