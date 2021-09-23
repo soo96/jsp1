@@ -23,12 +23,12 @@ table{
     background-color: #f1f2f5;
 }
 /* 속성을 이용한 선택자 */
-input[type=submit], input[type=reset]{
+input[type=submit], input[type=reset], input[type=button]{
     cursor:pointer;
     border: none;
     border-radius: 4px;
 }
-input[type=submit]:hover, input[type=reset]:hover{
+input[type=submit]:hover, input[type=reset]:hover, input[type=button]:hover{
     background-color: #a1a7cc;
     border-radius: 2px;
 }

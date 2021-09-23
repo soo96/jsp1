@@ -35,6 +35,8 @@
 	String addr = request.getParameter("addr");
 	String gender = request.getParameter("gender");
 	String[] hobby = request.getParameterValues("hobby");
+	String hobbies = Arrays.toString(request.getParameterValues("hobby"));
+	hobbies = hobbies.substring(1,hobbies.length()-1);
 
 %>
 	
@@ -48,7 +50,7 @@
 		<li> 나이 : <%= age %>세</li>
 		<li> 지역 : <%= addr %></li>
 		<li> 성별 : <%= (gender.equals("male")?"남":"여") %></li>
-		<li> 취미 : <%= Arrays.toString(hobby).substring(1, Arrays.toString(hobby).length()-1) %></li>
+		<li> 취미 : <%= hobbies %></li>
 	</ul>
 </body>
 </html>
